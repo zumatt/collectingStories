@@ -1,0 +1,43 @@
+body{
+    background-color: #EFEFEF;
+    font-family: 'SuisseIntl-Regular', sans-serif;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 35vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 35vh;
+    height: 30vh;
+  }
+  .textBox {
+    background-color: #EFEFEF;
+    /*margin-top: 2vh;*/
+    height: 100%;
+    resize: none;
+    border-radius: 1rem;
+    border-color: rgba(0, 0, 0, 0.700);
+    font-family: 'SuisseIntl-Regular', sans-serif;
+    padding-top: 1vh;
+    padding-left: 1vh;
+  }
+  .submitButton{
+    margin-top: 2vh;
+    padding: 4px;
+    border: 0.09rem solid #FF3A17;
+    border-radius: 2rem;
+    color: #FF3A17;
+  }
+  .submitButton-Click{
+    color: #EFEFEF;
+    background-color: #FF3A17;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0, 0, 0, 0.700);
+    opacity: 1; /* Firefox */
+    font-family: 'SuisseIntl-Regular', sans-serif;
+    padding-top: 1vh;
+    padding-left: 1vh;
+  }

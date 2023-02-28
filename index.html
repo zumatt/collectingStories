@@ -1,0 +1,50 @@
+<!DOCTYPE HTML><html>
+<!-----------HEAD----------->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <title>Collecting stories via email</title>
+</head>
+<!-----------BODY----------->
+<body>
+<form
+    name="storyForm"
+    id="storyForm"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSd4yo97dfqH07ZOKu1WkETObh7tqlg2pQg-65wmbtr-8YWJjw/formResponse?" 
+    target="hidden_iframe"
+    onsubmit="submitted=true; this.submit(); this.reset(); return false;"
+    enctype="text/plain"
+    class="form"
+>
+   <!-- <label for="story">Story</label> -->
+
+    <textarea
+        type="text"
+        rows="4"
+        cols="50"
+        id="entry.1513047266"
+        name="entry.1513047266"
+        placeholder="Enter here your story"
+        class="textBox"
+    ></textarea>
+
+    <input
+        type="submit"
+        class="submitButton"
+        value="Submit"
+    ></input>
+
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+</body>
+<!-----------SCRIPT----------->
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#storyForm').on('submit', function(e) {
+  $('#storyForm *').fadeOut(2000);
+  $('#storyForm').prepend('Your submission has been processed...');
+  });
+</script>
