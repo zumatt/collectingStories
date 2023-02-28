@@ -23,6 +23,7 @@ body{
     padding: 2vh;
   }
   .submitButton{
+    background-color: #EFEFEF;
     margin-top: 2vh;
     padding: 4px;
     border: 0.09rem solid #FF3A17;
