@@ -5,6 +5,12 @@
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <title>Collecting stories via email</title>
 </head>
+<!-----------SCRPIT----------->
+<script>
+    function feedback(){
+        alert("Your story is correctly submitted!");
+    }
+</script>
 <!-----------BODY----------->
 <body>
 <form
@@ -12,7 +18,7 @@
     id="storyForm"
     action="https://docs.google.com/forms/d/e/1FAIpQLSd4yo97dfqH07ZOKu1WkETObh7tqlg2pQg-65wmbtr-8YWJjw/formResponse?" 
     target="hidden_iframe"
-    onsubmit="submitted=true; this.submit(); this.reset(); return false; feedback();"
+    onsubmit="this.submit(); this.reset(); feedback(); return false;"
     enctype="text/plain"
     class="form"
 >
@@ -20,8 +26,6 @@
 
     <textarea
         type="text"
-        rows="4"
-        cols="50"
         id="entry.1513047266"
         name="entry.1513047266"
         placeholder="Enter here your story"
@@ -35,5 +39,5 @@
     ></input>
 </form>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 </body>
