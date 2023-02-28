@@ -20,8 +20,8 @@ body{
     border-radius: 1rem;
     border-color: rgba(0, 0, 0, 0.700);
     font-family: 'SuisseIntl-Regular', sans-serif;
-    padding-top: 1vh;
-    padding-left: 1vh;
+    padding-top: 2vh;
+    padding-left: 2vh;
   }
   .submitButton{
     margin-top: 2vh;
@@ -30,7 +30,7 @@ body{
     border-radius: 2rem;
     color: #FF3A17;
   }
-  .submitButton-Click{
+  .submitButton:hover {
     color: #EFEFEF;
     background-color: #FF3A17;
   }
@@ -38,6 +38,4 @@ body{
     color: rgba(0, 0, 0, 0.700);
     opacity: 1; /* Firefox */
     font-family: 'SuisseIntl-Regular', sans-serif;
-    padding-top: 1vh;
-    padding-left: 1vh;
   }

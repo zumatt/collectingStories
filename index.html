@@ -12,7 +12,7 @@
     id="storyForm"
     action="https://docs.google.com/forms/d/e/1FAIpQLSd4yo97dfqH07ZOKu1WkETObh7tqlg2pQg-65wmbtr-8YWJjw/formResponse?" 
     target="hidden_iframe"
-    onsubmit="submitted=true; this.submit(); this.reset(); return false;"
+    onsubmit="submitted=true; this.submit(); this.reset(); return false; feedback();"
     enctype="text/plain"
     class="form"
 >
@@ -33,18 +33,7 @@
         class="submitButton"
         value="Submit"
     ></input>
-
 </form>
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
 </body>
-<!-----------SCRIPT----------->
-<script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#storyForm').on('submit', function(e) {
-  $('#storyForm *').fadeOut(2000);
-  $('#storyForm').prepend('Your submission has been processed...');
-  });
-</script>
